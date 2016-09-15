@@ -423,13 +423,17 @@ textarea {
 /*Add Style*/
 /*---------------------------------------------------------------*/
 
-html{font-size: 62.5%;}
+html{
+    font-size: 62.5%;
+}
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
 	font-size: 2rem;
 }
-body{font-size: 1.6rem;}
-body,figure,ul,ol,li,dl,dt,dd,p,section,article,h1,h2,h3,h4,h5{
+body{
+    font-size: 1.6rem;
+}
+body,figure,ul,ol,li,dl,dt,dd,p,main,section,article,h1,h2,h3,h4,h5{
    margin: 0;
    padding: 0;
 }
@@ -437,16 +441,15 @@ body,figure,ul,ol,li,dl,dt,dd,p,section,article,h1,h2,h3,h4,h5{
 
 li{ list-style: none;}
 img{ vertical-align: bottom;}
-a{ text-decoration: none;color:#3c3c3c;}
+a{
+}
 a:hover{ }
 
-body{
-   font-family:"メイリオ",meiryo, sans-serif;
-   /*color:#3c3c3c;*/
-}
-body{ /*font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;*/
-}
 
+body{ line-height: 1;}
+div,section,article{
+/*line-height: 1.6;*/
+}
 
 .mcf:after {
 	content: ".";
@@ -457,19 +460,6 @@ body{ /*font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial 
 	visibility: hidden;
 }
 
-body{ line-height: 1;}
-div,section,article{
-/*line-height: 1.6;*/
-}
-
-
-.txtlize {
-  word-wrap: break-word;
-  text-indent: -200%;
-  font-size: 1rem;
-  overflow: hidden;
-  background-repeat: no-repeat;
-}
 .txt {
   word-wrap: break-word;
   text-indent: -200%;
