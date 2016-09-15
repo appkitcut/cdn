@@ -1,2 +1,0 @@
-# cdn
-css,js
