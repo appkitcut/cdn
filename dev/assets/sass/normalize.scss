@@ -24,8 +24,8 @@ body {
 
 /**
  * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
+ * 1. Add the correct display in Edge, IE, and Firefox.（inline扱いのため）
+ * 2. Add the correct display in IE対策（inline扱いのため）
  */
 
 article,
@@ -102,6 +102,21 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+}
+a:link,
+a:visited,
+a:active,
+a:hover{
+    color:#333;
+}
+
+
+// ---------------------------------------------------------------
+// 全てをbox-sizingに。（width = elm + padding + border）
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
 /* Text-level semantics

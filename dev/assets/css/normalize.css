@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -23,8 +24,8 @@ body {
    ========================================================================== */
 /**
  * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
+ * 1. Add the correct display in Edge, IE, and Firefox.（inline扱いのため）
+ * 2. Add the correct display in IE対策（inline扱いのため）
  */
 article,
 aside,
@@ -96,6 +97,19 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: #333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* Text-level semantics
