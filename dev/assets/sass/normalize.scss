@@ -476,9 +476,15 @@ div,section,article{
 }
 
 .txt {
-  word-wrap: break-word;
-  text-indent: -200%;
-  font-size: 1rem;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  // word-wrap: break-word;
+  // text-indent: -200%;
+  // font-size: 1rem;
+  // overflow: hidden;
+  // background-repeat: no-repeat;
+
+    overflow: hidden;
+    background-repeat: no-repeat;
+    white-space: nowrap;
+    text-indent: 100%;
+
 }
