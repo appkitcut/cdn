@@ -12,25 +12,21 @@
 <![endif]-->
 
 <title>タイトル</title>
-<!-- <link rel="stylesheet" href="assets/css/normalize.css" /> -->
-<link rel="stylesheet" href="https://rawgit.com/appkitcut/cdns/master/dev/assets/css/normalize.css">
-<!-- <link rel="stylesheet" href="assets/css/normalize_plus.css" /> -->
-<link rel="stylesheet" href="https://rawgit.com/appkitcut/cdns/master/dev/assets/css/normalize_plus.css">
+<link rel="stylesheet" href="assets/css/normalize.css" />
+<!-- <link rel="stylesheet" href="https://rawgit.com/appkitcut/cdns/master/dev/assets/css/normalize.css"> -->
+<link rel="stylesheet" href="assets/css/normalize_plus.css" />
+<!-- <link rel="stylesheet" href="https://rawgit.com/appkitcut/cdns/master/dev/assets/css/normalize_plus.css"> -->
 </head>
 <body>
-<header>ヘッダー</header>
-<footer>フッター</footer>
 <h1>ヘッダー1</h1>
-<img src="https://rawgit.com/appkitcut/cdns/master/dev/assets/images/loading_a.gif" alt="">
 <h2>ヘッダー2</h2>
 <h3>ヘッダー3</h3>
 <h4>ヘッダー4</h4>
 <h5>ヘッダー5</h5>
+<header>ヘッダー</header>
+<footer>フッター</footer>
 <p>パラグラフ</p>
 <div>ディブ</div>
-<spna>スパン</spna>
-<time>2016.1.1</time>
-<small>スモール</small>
 <section>セクション</section>
 <article class="">アーティクル</article>
 <aside>アサイド</aside>
@@ -41,30 +37,29 @@
     <dd>DD</dd>
 </dl>
 <ul>
-    <li>リスト</li>
+    <li>ULリスト</li>
 </ul>
 <ol>
-    <li>リスト</li>
+    <li>ULリスト</li>
 </ol>
 <table>
     <tr>
         <th>ティーエイチ</th>
         <td>ティーディー</td>
     </tr>
-    <tr>
-        <th>ティーエイチ</th>
-        <td>ティーディー</td>
-    </tr>
 </table>
-<a href="#">リンク</a><br>
+
+<a href="#">リンク</a>  <br>
+<img src="./assets/images/400.png" width="200" height="200" alt="">  <br>
+<img src="./assets/images/400.png" width="200" height="200" alt="">  <br>
+<span>スパン</span><time>2016.1.1</time><small>スモール</small>
+<br>
 <button type="button" name="button">ボタン</button>
 <figure>
     <img src="https://placehold.jp/18/cccccc/ffffff/100x30.png?text=イメージ" alt="">
     <figcaption>キャプション</figcaption>
 </figure>
-<video src="videofile.ogg" autoplay poster="posterimage.jpg">
-    <source src="http://" type="mimetype">
-</video>
+<video src="./assets/mov/video1.mp4" autoplay poster="posterimage.jpg"></video>
 <audio src="">
     <source src="http://" type="mimetype">
 </audio>
@@ -82,8 +77,19 @@
     <input type="submit" name="name" value="送信"><br>
 </form>
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="assets/js/func.js"></script>
+<style>
+
+
+h1,h2,h3,h4,h5,h6,
+section,article,address,audio,p,pre,div,dl,dt,dd,
+header,footer,aside,main,nav,ul,ol,tr,th,td,
+a,span,time,small,button,img,figcaption{
+
+  background: pink;
+}
+
+</style>
 </body>
 </html>
