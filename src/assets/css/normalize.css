@@ -99,7 +99,7 @@ a:hover {
   outline-width: 0;
 }
 
-a:link {
+a {
   color: #4d79ff;
 }
 
@@ -252,10 +252,14 @@ hr {
 button,
 input,
 optgroup,
-select,
 textarea {
   font: inherit;
   /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+select {
   margin: 0;
   /* 2 */
 }
@@ -443,6 +447,11 @@ img {
   vertical-align: bottom;
 }
 
+video,
+audio {
+  vertical-align: bottom;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -466,6 +475,19 @@ div, section, article {
   background-repeat: no-repeat;
   white-space: nowrap;
   text-indent: 100%;
+}
+
+textarea {
+  vertical-align: bottom;
+}
+
+select {
+  padding: 0.5em 1em;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
 }
 
 /*# sourceMappingURL=normalize.css.map */

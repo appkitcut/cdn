@@ -593,4 +593,18 @@
   width: 1000px;
 }
 
+/* ボーダー */
+.border {
+  border: 1px solid #f1f1f1;
+}
+
+/* ポジション */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 /*# sourceMappingURL=helper.css.map */

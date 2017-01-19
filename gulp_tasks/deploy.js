@@ -13,7 +13,7 @@ gulp.task('deploy', function(){
   ftpConfig.log = console.log;// ロガーを加える
 
   // デプロイ先ディレクトリ
-  var remoteDest = '/web/azchk/gulp/';
+  var remoteDest = '/web/tech/';
 
   // デプロイ対象ファイル & 非対称ファイル設定
   var globs = [

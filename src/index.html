@@ -7,14 +7,15 @@
 <meta name="Description" content="ディスクリプション" />
 <meta name="keywords"  content="キーワード" />
 <!--[if lt IE 9]>
-<script src="https://rawgit.com/appkitcut/cdns/master/dev/assets/js/css3-mediaqueries.js"></script>
-<script src="https://rawgit.com/appkitcut/cdns/master/dev/assets/js/html5shiv.js"></script>
+<script src="https://rawgit.com/appkitcut/cdns/master/src/assets/js/css3-mediaqueries.js"></script>
+<script src="https://rawgit.com/appkitcut/cdns/master/src/assets/js/html5shiv.js"></script>
 <![endif]-->
-
 <title>タイトル</title>
 <link rel="stylesheet" href="assets/css/normalize.css" />
 <!-- <link rel="stylesheet" href="https://rawgit.com/appkitcut/cdns/master/dev/assets/css/normalize.css"> -->
 <link rel="stylesheet" href="assets/css/normalize_plus.css" />
+<link rel="stylesheet" href="assets/css/form.css" />
+<link rel="stylesheet" href="assets/css/temp.css" />
 <!-- <link rel="stylesheet" href="https://rawgit.com/appkitcut/cdns/master/dev/assets/css/normalize_plus.css"> -->
 </head>
 <body>
@@ -30,7 +31,10 @@
 <section>セクション</section>
 <article class="">アーティクル</article>
 <aside>アサイド</aside>
+<a href="#">リンク</a>
 <main>メイン</main>
+<strong>ストロング</strong>
+
 <nav>ナビ</nav>
 <dl>
     <dt>DT</dt>
@@ -46,50 +50,63 @@
     <tr>
         <th>ティーエイチ</th>
         <td>ティーディー</td>
+        <td>ティーディー</td>
+        <td>ティーディー</td>
     </tr>
 </table>
 
-<a href="#">リンク</a>  <br>
 <img src="./assets/images/400.png" width="200" height="200" alt="">  <br>
 <img src="./assets/images/400.png" width="200" height="200" alt="">  <br>
-<span>スパン</span><time>2016.1.1</time><small>スモール</small>
-<br>
+<span>スパン</span>
+<div>ディブ</div>
+<div>ディブ</div>
+<time>2016.1.1</time>
+<div>ディブ</div>
+<div>ディブ</div>
+<small>スモール</small>
+<div>ディブ</div>
+<div>ディブ</div>
 <button type="button" name="button">ボタン</button>
 <figure>
     <img src="https://placehold.jp/18/cccccc/ffffff/100x30.png?text=イメージ" alt="">
     <figcaption>キャプション</figcaption>
 </figure>
 <video src="./assets/mov/video1.mp4" autoplay poster="posterimage.jpg"></video>
-<audio src="">
-    <source src="http://" type="mimetype">
+<div>ディブ</div>
+<audio controls>
+    <source src="./assets/data/audio.mp3" type="audio/mp3">
+    <p>ご利用のブラウザではこの音声を再生できません。</p>
 </audio>
+<div>ディブ</div>
 <form action="">
-    <input type="text"><br>
-    <textarea name="name" rows="8" cols="40"></textarea><br>
+    <div>ディブ</div>
+    インプット：<input type="text" placeholder="プレスホルダー" style="width:180px">
+    <div>ディブ</div>
+    <textarea name="name" rows="8" cols="40" style="width:100%"></textarea><br>
+    <div>ディブ</div>
     <select class="" name="">
         <option value="">オプション</option>
+        <option value="">オプション</option>
+        <option value="">オプション</option>
     </select><br>
+    <div>ディブ</div>
     <input type="button" name="name" value="ボタン"><br>
+    <div>ディブ</div>
     <label for="radios">ラベル</label><input type="radio" name="" id="radios" value="ボタン"><br>
     <input type="checkbox" name="name" value="" id="checkbox"><label for="checkbox">チェックボックス</label><br>
     <input type="button" name="name" value="ボタン"><br>
     <input type="reset" name="name" value="リセット"><br>
     <input type="submit" name="name" value="送信"><br>
 </form>
-
+<div class="responsive">メディアクエリ確認</div>
+<div class="rem">REM確認</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="assets/js/func.js"></script>
-<style>
 
+<!-- 外部ファイルのcssのみ有効 -->
+<!--[if lt IE 9]>
+      <script src="assets/js/rem.min.js"></script>
+<![endif]-->
 
-h1,h2,h3,h4,h5,h6,
-section,article,address,audio,p,pre,div,dl,dt,dd,
-header,footer,aside,main,nav,ul,ol,tr,th,td,
-a,span,time,small,button,img,figcaption{
-
-  background: pink;
-}
-
-</style>
 </body>
 </html>

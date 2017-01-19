@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* iOSでのデフォルトスタイルをリセット */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="reset"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type="submit"]::focus,
+input[type="reset"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #66afe9;
+  border: 2px solid #66afe9;
+  outline: 0;
+}
+
+select {
+  border: 1px solid #eee;
+  background: #FFF;
+}
+
+/*# sourceMappingURL=form.css.map */

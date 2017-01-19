@@ -103,7 +103,7 @@ a:active,
 a:hover {
   outline-width: 0;
 }
-a:link{
+a{
   color: #4d79ff;
 }
 a:link,
@@ -275,10 +275,12 @@ hr {
 button,
 input,
 optgroup,
-select,
 textarea {
   font: inherit; /* 1 */
   margin: 0; /* 2 */
+}
+select{
+    margin: 0; /* 2 */
 }
 
 /**
@@ -458,8 +460,17 @@ body,figure,ul,ol,li,dl,dt,dd,p,main,section,article,h1,h2,h3,h4,h5{
 
 
 li{ list-style: none;}
-img{ vertical-align: bottom;}
+
+// 下余白に対する処置
+img{
+    vertical-align: bottom;
+}
+video,
+audio{
+    vertical-align: bottom;
+}
 a{
+
 }
 a:hover{}
 
@@ -497,3 +508,22 @@ div,section,article{
     text-indent: 100%;
 
 }
+
+
+// FORM ---------------------------------------------------------------
+textarea{
+    vertical-align: bottom;
+}
+select{
+padding: 0.5em 1em;
+// -webkit-appearance:none;
+}
+
+
+table{
+    border: none;
+    border-collapse: collapse;        //隙間なし
+    // border-collapse: separate;    //セパレート
+}
+// コメント
+// a要素はインラインなのでline-height分の空白が上下にできている
