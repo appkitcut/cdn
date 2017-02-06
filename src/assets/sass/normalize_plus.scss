@@ -1,24 +1,66 @@
 @charset "utf-8";
 
+// プロジェクト別全体適用スタイル ---------------------------------------------------------------
 body{
     // font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
     font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
 
-// フォントカラー
+// フォントカラー ---------------------------------------------------------------
 body,
 input,
 select{
     color:#3c3c3c;
 }
 
+// マウスオーバー ---------------------------------------------------------------
+a{
+    color:rgb(0, 51, 204);
+}
+a:visited {
+    color: rgb(102, 51, 153);
+}
+a:focus {
+
+}
+a:active {
+
+}
+
+
+
+
+// HELPER ---------------------------------------------------------------
 // フロート
-.left{
-    float: left;
+.left { float: left; }
+.right{ float: right;}
+
+.mcf:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
 }
-.right{
-    float: right;
+
+.txt {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    white-space: nowrap;
+    text-indent: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -450,7 +450,7 @@ body{
     font-size: 1.6rem;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6{
 	font-size: 2rem;
 }
 body,figure,ul,ol,li,dl,dt,dd,p,main,section,article,h1,h2,h3,h4,h5{
@@ -461,7 +461,7 @@ body,figure,ul,ol,li,dl,dt,dd,p,main,section,article,h1,h2,h3,h4,h5{
 
 li{ list-style: none;}
 
-// 下余白に対する処置
+// 下余白に対する処置 ----------------------------------------------------------
 img{
     vertical-align: bottom;
 }
@@ -469,14 +469,31 @@ video,
 audio{
     vertical-align: bottom;
 }
+
+
 a{
 
 }
-a:hover{}
+a:hover{
 
-button{
-  border: none;
-  cursor: pointer;
+}
+
+// マウスオーバー --------------------------------------------------------------
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    // outline: none;
+}
+
+// アウトライン ----------------------------------------------------------------
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus{
+    outline: none;
 }
 
 body{
@@ -486,28 +503,6 @@ div,section,article{
 /*line-height: 1.6;*/
 }
 
-.mcf:after {
-	content: ".";
-	display: block;
-	height: 0;
-	font-size: 0;
-	clear: both;
-	visibility: hidden;
-}
-
-.txt {
-  // word-wrap: break-word;
-  // text-indent: -200%;
-  // font-size: 1rem;
-  // overflow: hidden;
-  // background-repeat: no-repeat;
-
-    overflow: hidden;
-    background-repeat: no-repeat;
-    white-space: nowrap;
-    text-indent: 100%;
-
-}
 
 
 // FORM ---------------------------------------------------------------
@@ -515,8 +510,8 @@ textarea{
     vertical-align: bottom;
 }
 select{
-padding: 0.5em 1em;
-// -webkit-appearance:none;
+    padding: 0.5em 1em;
+    // -webkit-appearance:none;
 }
 
 

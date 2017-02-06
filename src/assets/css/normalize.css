@@ -430,7 +430,7 @@ body {
   font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
@@ -452,29 +452,23 @@ audio {
   vertical-align: bottom;
 }
 
-button {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   border: none;
   cursor: pointer;
 }
 
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
 div, section, article {
   /*line-height: 1.6;*/
-}
-
-.mcf:after {
-  content: ".";
-  display: block;
-  height: 0;
-  font-size: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.txt {
-  overflow: hidden;
-  background-repeat: no-repeat;
-  white-space: nowrap;
-  text-indent: 100%;
 }
 
 textarea {

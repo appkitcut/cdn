@@ -9,12 +9,36 @@ select {
   color: #3c3c3c;
 }
 
+a {
+  color: #0033cc;
+}
+
+a:visited {
+  color: rebeccapurple;
+}
+
 .left {
   float: left;
 }
 
 .right {
   float: right;
+}
+
+.mcf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.txt {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  text-indent: 100%;
 }
 
 /*# sourceMappingURL=normalize_plus.css.map */
